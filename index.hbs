@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube Video Feed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .filter-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+      .video-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #f9f9f9;
+        display: none; /* Hide initially, will be displayed by JavaScript */
+      }
+      .video-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .video-item a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+      }
+      .video-item a:hover {
+        background-color: #eaeaea;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>YouTube Videos</h1>
+    
+    <div class="filter-container">
+      <label for="channel-filter">Filter by Channel:</label>
+      <select id="channel-filter" onchange="filterVideos()">
+        <option value="all">All Channels</option>
+        {{#each uniqueChannels}}
+          <option value="{{channelId}}">{{channelTitle}}</option>
+        {{/each}}
+      </select>
+    </div>
+    
+    <div class="grid-container">
+      {{#each videos}}
+        <div class="video-item" data-channel="{{channelId}}">
+          <a href="{{link.href}}" target="_blank">
+            <img src="{{media:group.media:thumbnail.url}}" alt="{{title}}">
+            <p>{{title}}</p>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+
+    <script>
+      function filterVideos() {
+        var filterValue = document.getElementById('channel-filter').value;
+        var videos = document.querySelectorAll('.video-item');
+
+        videos.forEach(function(video) {
+          if (filterValue === 'all' || video.getAttribute('data-channel') === filterValue) {
+            video.style.display = 'block'; // Show matching videos
+          } else {
+            video.style.display = 'none'; // Hide non-matching videos
+          }
+        });
+      }
+
+      // Initially show all videos
+      filterVideos();
+    </script>
+  </body>
+</html>
+
