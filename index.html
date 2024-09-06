@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube Video Feed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .filter-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+      .video-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #f9f9f9;
+        display: none; /* Hide initially, will be displayed by JavaScript */
+      }
+      .video-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .video-item a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+      }
+      .video-item a:hover {
+        background-color: #eaeaea;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>YouTube Videos</h1>
+    
+    <div class="filter-container">
+      <label for="channel-filter">Filter by Channel:</label>
+      <select id="channel-filter" onchange="filterVideos()">
+        <option value="all">All Channels</option>
+          <option value="UCWGsN59FON3vOtXCozQPsZQ">Le Canard Réfractaire</option>
+          <option value="UCI_FnSJPNGd3Y3IL0PwD-NQ">Le Diable Positif</option>
+          <option value="UC4wFTE-fzVmghgtOcD5CQkA">Oui daccord</option>
+          <option value="UCr_3nQ4eRCwm_XUDpf62MAg">Partager cest Sympa</option>
+          <option value="UCT67YOMntJxfRnO_9bXDpvw">Le Média</option>
+          <option value="UCYkZbyXcVmtdRUpCBi713vw">Pure Politique</option>
+          <option value="UC__xRB5L4toU9yYawt_lIKg">Blast</option>
+          <option value="UCNtbFjdJBwoBifQtUjOgUjA">Minutes Rouges</option>
+          <option value="UC_NukSq2ve_AHVAz_9ikTDg">Usul</option>
+          <option value="UClDye0T4xTEq46sA5evq9fA">A Gauche</option>
+          <option value="UCE38FJeWDQ-ViY6buSKWoJg">Glupatate</option>
+          <option value="UCbbmy1wFvL1Xq0G9I-mLtQg">Padustream</option>
+      </select>
+    </div>
+    
+    <div class="grid-container">
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;Prqo7FlVPKY" target="_blank">
+            <img src="https://i1.ytimg.com/vi/Prqo7FlVPKY/hqdefault.jpg" alt="MAIS C&#x27;EST QUI CE TYPE ? 😠 &amp;&amp;#35;40;Barnier premier ministre ? Pourquoi ?&amp;&amp;#35;41;">
+            <p>MAIS C&#x27;EST QUI CE TYPE ? 😠 &amp;&amp;#35;40;Barnier premier ministre ? Pourquoi ?&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;NL4HNpOSXQY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NL4HNpOSXQY/hqdefault.jpg" alt="[ZAP] MACRON PERD LA TÊTE &amp;&amp;#35;40;Le Pixel Mort&amp;&amp;#35;41;">
+            <p>[ZAP] MACRON PERD LA TÊTE &amp;&amp;#35;40;Le Pixel Mort&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;2Zp8UQ-Xapg" target="_blank">
+            <img src="https://i3.ytimg.com/vi/2Zp8UQ-Xapg/hqdefault.jpg" alt="LA RÉVOLTE DES SUPPORTERS &amp;&amp;#35;40;Grèves, sabotages, piratages...&amp;&amp;#35;41; &amp;&amp;#35;40;REUPLOAD&amp;&amp;#35;41;">
+            <p>LA RÉVOLTE DES SUPPORTERS &amp;&amp;#35;40;Grèves, sabotages, piratages...&amp;&amp;#35;41; &amp;&amp;#35;40;REUPLOAD&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;nC5OPKwIQlM" target="_blank">
+            <img src="https://i3.ytimg.com/vi/nC5OPKwIQlM/hqdefault.jpg" alt="COMMENT CA VA DANS LES HOPITAUX ? 🙃">
+            <p>COMMENT CA VA DANS LES HOPITAUX ? 🙃</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;BbabxZJx9lg" target="_blank">
+            <img src="https://i3.ytimg.com/vi/BbabxZJx9lg/hqdefault.jpg" alt="LA RÉVOLTE DES SUPPORTERS &amp;&amp;#35;40;Grèves, sabotages, piratages...&amp;&amp;#35;41;">
+            <p>LA RÉVOLTE DES SUPPORTERS &amp;&amp;#35;40;Grèves, sabotages, piratages...&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;-aw1OSRiNN4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/-aw1OSRiNN4/hqdefault.jpg" alt="MACRON AIME L&#x27;INDUSTRIE ! ... Enfin presque ! 😠">
+            <p>MACRON AIME L&#x27;INDUSTRIE ! ... Enfin presque ! 😠</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;6amiVy8awDc" target="_blank">
+            <img src="https://i3.ytimg.com/vi/6amiVy8awDc/hqdefault.jpg" alt="LA GUERRE, C&#x27;EST LA PAIX &amp;&amp;#35;40;Analyse propagande&amp;&amp;#35;41;">
+            <p>LA GUERRE, C&#x27;EST LA PAIX &amp;&amp;#35;40;Analyse propagande&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;h8T41glNFYo" target="_blank">
+            <img src="https://i1.ytimg.com/vi/h8T41glNFYo/hqdefault.jpg" alt="DES MILITANTS ATTAQUÉS ET INCENDIÉS ?! 😬">
+            <p>DES MILITANTS ATTAQUÉS ET INCENDIÉS ?! 😬</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;e8rt6KH0CAQ" target="_blank">
+            <img src="https://i2.ytimg.com/vi/e8rt6KH0CAQ/hqdefault.jpg" alt="D&#x27;ou vient le HEZBOLLAH, l&#x27;ennemi d&#x27;ISRAEL ? 🇱🇧">
+            <p>D&#x27;ou vient le HEZBOLLAH, l&#x27;ennemi d&#x27;ISRAEL ? 🇱🇧</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;04DdC7R1N1M" target="_blank">
+            <img src="https://i1.ytimg.com/vi/04DdC7R1N1M/hqdefault.jpg" alt="La PROPAGANDE de GUERRE vous envoie au FRONT ?">
+            <p>La PROPAGANDE de GUERRE vous envoie au FRONT ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;IgIubTrAqVc" target="_blank">
+            <img src="https://i2.ytimg.com/vi/IgIubTrAqVc/hqdefault.jpg" alt="QUI veut la GUERRE ? &amp;&amp;#35;40;Israël, USA, Iran, Hezbollah...&amp;&amp;#35;41;">
+            <p>QUI veut la GUERRE ? &amp;&amp;#35;40;Israël, USA, Iran, Hezbollah...&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;kYgx2hn--qw" target="_blank">
+            <img src="https://i4.ytimg.com/vi/kYgx2hn--qw/hqdefault.jpg" alt="Comment ils créent la résignation ?">
+            <p>Comment ils créent la résignation ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;VZ0OrTKkkbI" target="_blank">
+            <img src="https://i3.ytimg.com/vi/VZ0OrTKkkbI/hqdefault.jpg" alt="🇮🇱 ISRAEL PRÉPARE LA GUERRE ? 😬">
+            <p>🇮🇱 ISRAEL PRÉPARE LA GUERRE ? 😬</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;9zzHd7c6QS4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/9zzHd7c6QS4/hqdefault.jpg" alt="LA PROCHAINE GUERRE D’ISRAEL ? 🇮🇱⚔️🇱🇧">
+            <p>LA PROCHAINE GUERRE D’ISRAEL ? 🇮🇱⚔️🇱🇧</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCWGsN59FON3vOtXCozQPsZQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;EgEtsLJwfLQ" target="_blank">
+            <img src="https://i2.ytimg.com/vi/EgEtsLJwfLQ/hqdefault.jpg" alt="NUCLÉAIRE : Le nouveau champ de bataille impérialiste !">
+            <p>NUCLÉAIRE : Le nouveau champ de bataille impérialiste !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;1_cq6IDMmUs" target="_blank">
+            <img src="https://i2.ytimg.com/vi/1_cq6IDMmUs/hqdefault.jpg" alt="Pile je gagne, face tu perds !">
+            <p>Pile je gagne, face tu perds !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;DduRzUjopkw" target="_blank">
+            <img src="https://i1.ytimg.com/vi/DduRzUjopkw/hqdefault.jpg" alt="Les Jeux Olympiques de Pourris 2024">
+            <p>Les Jeux Olympiques de Pourris 2024</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;3jfINCr1G5k" target="_blank">
+            <img src="https://i4.ytimg.com/vi/3jfINCr1G5k/hqdefault.jpg" alt="Diable Positif: Les socialismes">
+            <p>Diable Positif: Les socialismes</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;AZ-h28KM4Yc" target="_blank">
+            <img src="https://i2.ytimg.com/vi/AZ-h28KM4Yc/hqdefault.jpg" alt="Les extrêmes se rejoignent !">
+            <p>Les extrêmes se rejoignent !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;oZVyVIy9Dfo" target="_blank">
+            <img src="https://i4.ytimg.com/vi/oZVyVIy9Dfo/hqdefault.jpg" alt="Après tout, on a  ̶j̶a̶m̶a̶i̶s̶  essayé.">
+            <p>Après tout, on a  ̶j̶a̶m̶a̶i̶s̶  essayé.</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;UDVuUDmFiG0" target="_blank">
+            <img src="https://i2.ytimg.com/vi/UDVuUDmFiG0/hqdefault.jpg" alt="Combattre le feu par le feu">
+            <p>Combattre le feu par le feu</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;IymyP0E9F4M" target="_blank">
+            <img src="https://i2.ytimg.com/vi/IymyP0E9F4M/hqdefault.jpg" alt="Diable Positif: L&#x27;immigration 2e partie">
+            <p>Diable Positif: L&#x27;immigration 2e partie</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;n7nQ-CxLTt8" target="_blank">
+            <img src="https://i3.ytimg.com/vi/n7nQ-CxLTt8/hqdefault.jpg" alt="Le Capitalisme Intériorisé">
+            <p>Le Capitalisme Intériorisé</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;QwVYuSkLMwU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/QwVYuSkLMwU/hqdefault.jpg" alt="Que la France reste la France !">
+            <p>Que la France reste la France !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;hklK0-LZdLQ" target="_blank">
+            <img src="https://i1.ytimg.com/vi/hklK0-LZdLQ/hqdefault.jpg" alt="Un pognon de dingue !">
+            <p>Un pognon de dingue !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;N0OD_bhlA6A" target="_blank">
+            <img src="https://i3.ytimg.com/vi/N0OD_bhlA6A/hqdefault.jpg" alt="Diable Positif: L&#x27;immigration 1re Partie">
+            <p>Diable Positif: L&#x27;immigration 1re Partie</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;H8rIkJTQxbE" target="_blank">
+            <img src="https://i1.ytimg.com/vi/H8rIkJTQxbE/hqdefault.jpg" alt="Full Metal Razmoket">
+            <p>Full Metal Razmoket</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;qfckCj0Eues" target="_blank">
+            <img src="https://i2.ytimg.com/vi/qfckCj0Eues/hqdefault.jpg" alt="Comment devenir premier ministre !">
+            <p>Comment devenir premier ministre !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;eryWF2U3JWU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/eryWF2U3JWU/hqdefault.jpg" alt="Taxer les riches, chaud pour nos miches &amp;#35;shorts">
+            <p>Taxer les riches, chaud pour nos miches &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCI_FnSJPNGd3Y3IL0PwD-NQ">
+          <a href="https://www.youtube.com/watch?v&#x3D;BOLACWyL0UE" target="_blank">
+            <img src="https://i3.ytimg.com/vi/BOLACWyL0UE/hqdefault.jpg" alt="Mauvaises Résolutions et FAQ">
+            <p>Mauvaises Résolutions et FAQ</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;XPjeJEN-Edo" target="_blank">
+            <img src="https://i1.ytimg.com/vi/XPjeJEN-Edo/hqdefault.jpg" alt="L&#x27;affaire Galmot et les insurgés de Cayenne &amp;&amp;#35;40;1931&amp;&amp;#35;41;">
+            <p>L&#x27;affaire Galmot et les insurgés de Cayenne &amp;&amp;#35;40;1931&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;291aCnYz6ic" target="_blank">
+            <img src="https://i3.ytimg.com/vi/291aCnYz6ic/hqdefault.jpg" alt="Éduc pop’ : les Universités Populaires &amp;&amp;#35;40;1899-1914&amp;&amp;#35;41; – Partie 2">
+            <p>Éduc pop’ : les Universités Populaires &amp;&amp;#35;40;1899-1914&amp;&amp;#35;41; – Partie 2</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;lDZGXGY2FuU" target="_blank">
+            <img src="https://i1.ytimg.com/vi/lDZGXGY2FuU/hqdefault.jpg" alt="Années 30, aux racines de l&#x27;antifascisme">
+            <p>Années 30, aux racines de l&#x27;antifascisme</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;pzgw5JhKNq8" target="_blank">
+            <img src="https://i1.ytimg.com/vi/pzgw5JhKNq8/hqdefault.jpg" alt="Agrach : l&#x27;homme qui venait d&#x27;ailleurs">
+            <p>Agrach : l&#x27;homme qui venait d&#x27;ailleurs</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;oJll9jItKTs" target="_blank">
+            <img src="https://i4.ytimg.com/vi/oJll9jItKTs/hqdefault.jpg" alt="La crise de Fachoda">
+            <p>La crise de Fachoda</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;pjYOk3YtjMs" target="_blank">
+            <img src="https://i1.ytimg.com/vi/pjYOk3YtjMs/hqdefault.jpg" alt="Sport et lutte des classes">
+            <p>Sport et lutte des classes</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;NxioI---ENU" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NxioI---ENU/hqdefault.jpg" alt="Éduc pop’ : les Universités Populaires &amp;&amp;#35;40;1899-1914&amp;&amp;#35;41; – Partie 1">
+            <p>Éduc pop’ : les Universités Populaires &amp;&amp;#35;40;1899-1914&amp;&amp;#35;41; – Partie 1</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;Hpn3YYpwdZo" target="_blank">
+            <img src="https://i1.ytimg.com/vi/Hpn3YYpwdZo/hqdefault.jpg" alt="Énorme PRANK en plein tournage &amp;&amp;#35;40;PRANK&amp;&amp;#35;41; &amp;&amp;#35;40;DRÔLE&amp;&amp;#35;41; &amp;&amp;#35;40;HUMOUR&amp;&amp;#35;41; | &amp;#35;shorts">
+            <p>Énorme PRANK en plein tournage &amp;&amp;#35;40;PRANK&amp;&amp;#35;41; &amp;&amp;#35;40;DRÔLE&amp;&amp;#35;41; &amp;&amp;#35;40;HUMOUR&amp;&amp;#35;41; | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;lXouvzAIws4" target="_blank">
+            <img src="https://i1.ytimg.com/vi/lXouvzAIws4/hqdefault.jpg" alt="MasterClass d&#x27;Antoine de la CGT à Lyon &amp;&amp;#35;40;7 mars 2023&amp;&amp;#35;41; | &amp;#35;shorts">
+            <p>MasterClass d&#x27;Antoine de la CGT à Lyon &amp;&amp;#35;40;7 mars 2023&amp;&amp;#35;41; | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;-4BV4ukwkTI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/-4BV4ukwkTI/hqdefault.jpg" alt="Canuts et Soyeux | Tiré du docu sur les Canuts dispo sur la chaîne | &amp;#35;shorts">
+            <p>Canuts et Soyeux | Tiré du docu sur les Canuts dispo sur la chaîne | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;oNh97rVLxQI" target="_blank">
+            <img src="https://i4.ytimg.com/vi/oNh97rVLxQI/hqdefault.jpg" alt="La bourgeoisie lyonnaise fait la teuf | Tiré d&#x27;un docu sur les Canuts dispo sur la chaîne | &amp;#35;shorts">
+            <p>La bourgeoisie lyonnaise fait la teuf | Tiré d&#x27;un docu sur les Canuts dispo sur la chaîne | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;FoMvhqeikeM" target="_blank">
+            <img src="https://i3.ytimg.com/vi/FoMvhqeikeM/hqdefault.jpg" alt="L&#x27;émergence de la bourgeoisie | Tiré d&#x27;un documentaire sur les Canuts dispo sur la chaîne | &amp;#35;shorts">
+            <p>L&#x27;émergence de la bourgeoisie | Tiré d&#x27;un documentaire sur les Canuts dispo sur la chaîne | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;GxGhLr1asR4" target="_blank">
+            <img src="https://i4.ytimg.com/vi/GxGhLr1asR4/hqdefault.jpg" alt="La fondation de Lyon | Tiré d&#x27;un documentaire sur les Canuts dispo sur la chaîne | &amp;#35;shorts">
+            <p>La fondation de Lyon | Tiré d&#x27;un documentaire sur les Canuts dispo sur la chaîne | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;7CW6jygXVAM" target="_blank">
+            <img src="https://i4.ytimg.com/vi/7CW6jygXVAM/hqdefault.jpg" alt="Les révoltes des canuts | Documentaire complet sur la chaîne | &amp;#35;shorts">
+            <p>Les révoltes des canuts | Documentaire complet sur la chaîne | &amp;#35;shorts</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC4wFTE-fzVmghgtOcD5CQkA">
+          <a href="https://www.youtube.com/watch?v&#x3D;RBHb4M7Nuhs" target="_blank">
+            <img src="https://i3.ytimg.com/vi/RBHb4M7Nuhs/hqdefault.jpg" alt="Les révoltes des canuts &amp;&amp;#35;40;documentaire complet&amp;&amp;#35;41;">
+            <p>Les révoltes des canuts &amp;&amp;#35;40;documentaire complet&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;7YYiGpZ-UCY" target="_blank">
+            <img src="https://i4.ytimg.com/vi/7YYiGpZ-UCY/hqdefault.jpg" alt="Des Méga-Bassines, un Port, et des Flammes : Mobilisation en 3 actes">
+            <p>Des Méga-Bassines, un Port, et des Flammes : Mobilisation en 3 actes</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;OhiUtmyQDJ4" target="_blank">
+            <img src="https://i4.ytimg.com/vi/OhiUtmyQDJ4/hqdefault.jpg" alt="Extrême droite : Quelle RÉSISTANCE s’organise maintenant ?">
+            <p>Extrême droite : Quelle RÉSISTANCE s’organise maintenant ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;dmiwYCbGifA" target="_blank">
+            <img src="https://i1.ytimg.com/vi/dmiwYCbGifA/hqdefault.jpg" alt="Pourquoi les électeurs votent Rassemblement National ?">
+            <p>Pourquoi les électeurs votent Rassemblement National ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;qYc-34EfYF4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/qYc-34EfYF4/hqdefault.jpg" alt="Le KO économique après le 8 juillet ?!">
+            <p>Le KO économique après le 8 juillet ?!</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;KYdEryF7Yqs" target="_blank">
+            <img src="https://i4.ytimg.com/vi/KYdEryF7Yqs/hqdefault.jpg" alt="La Fabrique de la Répression | &amp;#35;A69 &amp;#35;RoueLibre">
+            <p>La Fabrique de la Répression | &amp;#35;A69 &amp;#35;RoueLibre</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;iObIK10K1tU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/iObIK10K1tU/hqdefault.jpg" alt="Mais cette JOURNÉE 😱🥹🔥 150% ✅️ ❤️‍🔥 Et si on a de l&#x27;Ambition, à 200%, on part à l&#x27;international !">
+            <p>Mais cette JOURNÉE 😱🥹🔥 150% ✅️ ❤️‍🔥 Et si on a de l&#x27;Ambition, à 200%, on part à l&#x27;international !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;McsifjuU4Z4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/McsifjuU4Z4/hqdefault.jpg" alt="OBJECTIF 150% : On va au CINÉMA ! 📽🔥 L’objectif des 100% a été atteint, MERCI A TOUTES ET TOUS !!!">
+            <p>OBJECTIF 150% : On va au CINÉMA ! 📽🔥 L’objectif des 100% a été atteint, MERCI A TOUTES ET TOUS !!!</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;RYuNj2rehuo" target="_blank">
+            <img src="https://i3.ytimg.com/vi/RYuNj2rehuo/hqdefault.jpg" alt="50% atteint en 24h 🎬🔥 vous êtes des ouf ! On continue de pousser, plus que la moitié du chemin❤️‍🔥 !">
+            <p>50% atteint en 24h 🎬🔥 vous êtes des ouf ! On continue de pousser, plus que la moitié du chemin❤️‍🔥 !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;q5xJ0QcJGIc" target="_blank">
+            <img src="https://i2.ytimg.com/vi/q5xJ0QcJGIc/hqdefault.jpg" alt="Je fais UN FILM 🎬🔥 185% ✅️">
+            <p>Je fais UN FILM 🎬🔥 185% ✅️</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;i8rlbfoTJ3o" target="_blank">
+            <img src="https://i2.ytimg.com/vi/i8rlbfoTJ3o/hqdefault.jpg" alt="🚁🚨 passe le mot : il y a pire que les drones au-dessus des manifs">
+            <p>🚁🚨 passe le mot : il y a pire que les drones au-dessus des manifs</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;QIAMkVcXWyU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/QIAMkVcXWyU/hqdefault.jpg" alt="😱 L’Arabie Saoudite va investir sur ces 46 projets pour faire 💥 exploser la demande de pétrole !">
+            <p>😱 L’Arabie Saoudite va investir sur ces 46 projets pour faire 💥 exploser la demande de pétrole !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;nmtEroVyLao" target="_blank">
+            <img src="https://i3.ytimg.com/vi/nmtEroVyLao/hqdefault.jpg" alt="Le seul genre de cadeaux d&#x27;entreprises que j&#x27;aime 🌫🤿🤸‍♂️">
+            <p>Le seul genre de cadeaux d&#x27;entreprises que j&#x27;aime 🌫🤿🤸‍♂️</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;x9oSYw6Ab1E" target="_blank">
+            <img src="https://i1.ytimg.com/vi/x9oSYw6Ab1E/hqdefault.jpg" alt="Du Pétrole... EN FRANCE ?!">
+            <p>Du Pétrole... EN FRANCE ?!</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;3YWMPa25TSE" target="_blank">
+            <img src="https://i4.ytimg.com/vi/3YWMPa25TSE/hqdefault.jpg" alt="A69 : UNE GUERRE D&#x27;USURE">
+            <p>A69 : UNE GUERRE D&#x27;USURE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCr_3nQ4eRCwm_XUDpf62MAg">
+          <a href="https://www.youtube.com/watch?v&#x3D;wzQsFU5mLw4" target="_blank">
+            <img src="https://i4.ytimg.com/vi/wzQsFU5mLw4/hqdefault.jpg" alt="🚜💥 Opération &quot;Courses Gratuites&quot; chez Auchan par les paysans de la Conf&#x27; de la Vienne, vous aimez ?">
+            <p>🚜💥 Opération &quot;Courses Gratuites&quot; chez Auchan par les paysans de la Conf&#x27; de la Vienne, vous aimez ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;elGJfiq-1HU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/elGJfiq-1HU/hqdefault.jpg" alt="RENTRÉE POLITIQUE DES MÉDIAS : LE GRAND MERCATO FACHO ?">
+            <p>RENTRÉE POLITIQUE DES MÉDIAS : LE GRAND MERCATO FACHO ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;yguxw06D_DM" target="_blank">
+            <img src="https://i2.ytimg.com/vi/yguxw06D_DM/hqdefault.jpg" alt="MICHEL BARNIER PREMIER MINISTRE : LE GRAND VOL ÉLECTORAL DE MACRON">
+            <p>MICHEL BARNIER PREMIER MINISTRE : LE GRAND VOL ÉLECTORAL DE MACRON</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;Z3VN8FiBLrc" target="_blank">
+            <img src="https://i3.ytimg.com/vi/Z3VN8FiBLrc/hqdefault.jpg" alt="TOUJOURS PAS DE PREMIER MINISTRE : MACRON INCAPABLE ? &amp;&amp;#35;40;PAUL ELEK&amp;&amp;#35;41;">
+            <p>TOUJOURS PAS DE PREMIER MINISTRE : MACRON INCAPABLE ? &amp;&amp;#35;40;PAUL ELEK&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;vzl8iNSQQmk" target="_blank">
+            <img src="https://i3.ytimg.com/vi/vzl8iNSQQmk/hqdefault.jpg" alt="LA MACRONIE SE DÉCHIRE DÉJÀ : ÉDOUARD PHILIPPE ANNONCE SA CANDIDATURE POUR 2027">
+            <p>LA MACRONIE SE DÉCHIRE DÉJÀ : ÉDOUARD PHILIPPE ANNONCE SA CANDIDATURE POUR 2027</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;Dt7e7Lh3xYA" target="_blank">
+            <img src="https://i1.ytimg.com/vi/Dt7e7Lh3xYA/hqdefault.jpg" alt="&quot;DÉRAPAGE DU DÉFICIT PUBLIC&quot; : MACRON ET LE MAIRE SONT LES RESPONSABLES !">
+            <p>&quot;DÉRAPAGE DU DÉFICIT PUBLIC&quot; : MACRON ET LE MAIRE SONT LES RESPONSABLES !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;by0P7V_7koY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/by0P7V_7koY/hqdefault.jpg" alt="&quot;ON EN A MARRE !&quot; : PORCHER DÉBUNKE LE MENSONGE ANTI-CASTETS DE MACRON">
+            <p>&quot;ON EN A MARRE !&quot; : PORCHER DÉBUNKE LE MENSONGE ANTI-CASTETS DE MACRON</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;7RDdcQOwJK8" target="_blank">
+            <img src="https://i4.ytimg.com/vi/7RDdcQOwJK8/hqdefault.jpg" alt="1ER MINISTRE : MACRON CONTINUE SON CIRQUE">
+            <p>1ER MINISTRE : MACRON CONTINUE SON CIRQUE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;E2C26hwhoLw" target="_blank">
+            <img src="https://i2.ytimg.com/vi/E2C26hwhoLw/hqdefault.jpg" alt="SÉGOLÈNE ROYAL, JEAN-MICHEL BLANQUER, PAVEL DUROV : LES MALHEURS &amp;&amp;#35;40;ET LES MENSONGES&amp;&amp;#35;41; DE MACRON">
+            <p>SÉGOLÈNE ROYAL, JEAN-MICHEL BLANQUER, PAVEL DUROV : LES MALHEURS &amp;&amp;#35;40;ET LES MENSONGES&amp;&amp;#35;41; DE MACRON</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;yy-_OdHqwMw" target="_blank">
+            <img src="https://i2.ytimg.com/vi/yy-_OdHqwMw/hqdefault.jpg" alt="MISE EN EXAMEN DU PATRON DE TELEGRAM : UN DANGER POUR LES LIBERTÉS ?">
+            <p>MISE EN EXAMEN DU PATRON DE TELEGRAM : UN DANGER POUR LES LIBERTÉS ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;mY203XVKlfU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/mY203XVKlfU/hqdefault.jpg" alt="MÊME HOLLANDE TACLE MACRON : UNE FAUTE INSTITUTIONNELLE">
+            <p>MÊME HOLLANDE TACLE MACRON : UNE FAUTE INSTITUTIONNELLE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;G8cUfyvm7QU" target="_blank">
+            <img src="https://i4.ytimg.com/vi/G8cUfyvm7QU/hqdefault.jpg" alt="SCANDALE TELEGRAM : POURQUOI LA FRANCE A-T-ELLE ARRÊTÉ LE PATRON RUSSE PAVEL DUROV ?">
+            <p>SCANDALE TELEGRAM : POURQUOI LA FRANCE A-T-ELLE ARRÊTÉ LE PATRON RUSSE PAVEL DUROV ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;EFJSQc_PW40" target="_blank">
+            <img src="https://i2.ytimg.com/vi/EFJSQc_PW40/hqdefault.jpg" alt="LE NFP ÉCARTÉ : MACRON EN PLEINE DÉRIVE AUTORITAIRE">
+            <p>LE NFP ÉCARTÉ : MACRON EN PLEINE DÉRIVE AUTORITAIRE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;0vb9vkVtedE" target="_blank">
+            <img src="https://i1.ytimg.com/vi/0vb9vkVtedE/hqdefault.jpg" alt="MATIGNON : MELENCHON PIÈGE MACRON AU PIED DU MUR">
+            <p>MATIGNON : MELENCHON PIÈGE MACRON AU PIED DU MUR</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;od8e-DBJJL8" target="_blank">
+            <img src="https://i4.ytimg.com/vi/od8e-DBJJL8/hqdefault.jpg" alt="&quot;ADOPTE UN PREMIER MINISTRE&quot; : AU CŒUR DES CONSULTATIONS &quot;BIDON&quot; DE MACRON">
+            <p>&quot;ADOPTE UN PREMIER MINISTRE&quot; : AU CŒUR DES CONSULTATIONS &quot;BIDON&quot; DE MACRON</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCT67YOMntJxfRnO_9bXDpvw">
+          <a href="https://www.youtube.com/watch?v&#x3D;Z5embLTvCi0" target="_blank">
+            <img src="https://i3.ytimg.com/vi/Z5embLTvCi0/hqdefault.jpg" alt="RENTRÉE POLITIQUE : LE NFP PRÊT À DÉFIER MACRON AVEC LUCIE CASTETS">
+            <p>RENTRÉE POLITIQUE : LE NFP PRÊT À DÉFIER MACRON AVEC LUCIE CASTETS</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;p3pSDv93wiY" target="_blank">
+            <img src="https://i1.ytimg.com/vi/p3pSDv93wiY/hqdefault.jpg" alt="Barnier Premier ministre : MARINE A CHOISI le fondu savoyard">
+            <p>Barnier Premier ministre : MARINE A CHOISI le fondu savoyard</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;NPycqjQDMdY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NPycqjQDMdY/hqdefault.jpg" alt="C&#x27;est la dernière MACRONERIE : Mister Nobody à Matignon">
+            <p>C&#x27;est la dernière MACRONERIE : Mister Nobody à Matignon</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;gmo6xE33Q6w" target="_blank">
+            <img src="https://i4.ytimg.com/vi/gmo6xE33Q6w/hqdefault.jpg" alt="Macron S&#x27;INVENTE UNE CONSTITUTION pour garder le pouvoir">
+            <p>Macron S&#x27;INVENTE UNE CONSTITUTION pour garder le pouvoir</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;iGrnXMJkSJc" target="_blank">
+            <img src="https://i2.ytimg.com/vi/iGrnXMJkSJc/hqdefault.jpg" alt="Lucie Castets à Matignon : le casse-tête de Macron">
+            <p>Lucie Castets à Matignon : le casse-tête de Macron</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;beeB7QY8PsU" target="_blank">
+            <img src="https://i3.ytimg.com/vi/beeB7QY8PsU/hqdefault.jpg" alt="Choix du 1er ministre : Macron a l&#x27;athlète ailleurs">
+            <p>Choix du 1er ministre : Macron a l&#x27;athlète ailleurs</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;aZ7pwAaWqgg" target="_blank">
+            <img src="https://i2.ytimg.com/vi/aZ7pwAaWqgg/hqdefault.jpg" alt="BAVARDER ou GOUVERNER : la gauche doit choisir">
+            <p>BAVARDER ou GOUVERNER : la gauche doit choisir</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;eKwiVo4xgiU" target="_blank">
+            <img src="https://i2.ytimg.com/vi/eKwiVo4xgiU/hqdefault.jpg" alt="Braun-Pivet réélue : BRAQUAGE ÉLECTORAL à l&#x27;Assemblée nationale">
+            <p>Braun-Pivet réélue : BRAQUAGE ÉLECTORAL à l&#x27;Assemblée nationale</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;NtQJ2px4xHQ" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NtQJ2px4xHQ/hqdefault.jpg" alt="&quot;Ce n’est pas à une élection que nous avons assisté, mais à un braquage électoral.&quot;">
+            <p>&quot;Ce n’est pas à une élection que nous avons assisté, mais à un braquage électoral.&quot;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;LhbcgY900w4" target="_blank">
+            <img src="https://i1.ytimg.com/vi/LhbcgY900w4/hqdefault.jpg" alt="&quot;Il se murmure que des accords auraient été conclus avec le RN.&quot;">
+            <p>&quot;Il se murmure que des accords auraient été conclus avec le RN.&quot;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;F6fsqbmwzC8" target="_blank">
+            <img src="https://i3.ytimg.com/vi/F6fsqbmwzC8/hqdefault.jpg" alt="&quot;Cette journée est déterminante pour l’évolution de la situation politique.&quot;">
+            <p>&quot;Cette journée est déterminante pour l’évolution de la situation politique.&quot;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;2EJUIhGAsiQ" target="_blank">
+            <img src="https://i3.ytimg.com/vi/2EJUIhGAsiQ/hqdefault.jpg" alt="Baston LFI - PS : Avons-nous la gauche la plus bête du monde ?">
+            <p>Baston LFI - PS : Avons-nous la gauche la plus bête du monde ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;NqybYrg4yfM" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NqybYrg4yfM/hqdefault.jpg" alt="Macron le TRICHEUR">
+            <p>Macron le TRICHEUR</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;vr0BsU5g3FQ" target="_blank">
+            <img src="https://i3.ytimg.com/vi/vr0BsU5g3FQ/hqdefault.jpg" alt="Victoire en fanfare du Front Populaire, mais on cherche toujours le chef d&#x27;orchestre !">
+            <p>Victoire en fanfare du Front Populaire, mais on cherche toujours le chef d&#x27;orchestre !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;w62LI9xI66w" target="_blank">
+            <img src="https://i4.ytimg.com/vi/w62LI9xI66w/hqdefault.jpg" alt="Front républicain : le RN sur la voix de barrage ?">
+            <p>Front républicain : le RN sur la voix de barrage ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCYkZbyXcVmtdRUpCBi713vw">
+          <a href="https://www.youtube.com/watch?v&#x3D;T7QTskwfLkI" target="_blank">
+            <img src="https://i1.ytimg.com/vi/T7QTskwfLkI/hqdefault.jpg" alt="Désistement ou maintien ? On va voir qui est républicain !">
+            <p>Désistement ou maintien ? On va voir qui est républicain !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;Qt-D07MjbKA" target="_blank">
+            <img src="https://i2.ytimg.com/vi/Qt-D07MjbKA/hqdefault.jpg" alt="MICHEL BARNIER : VICTOIRE POUR L&#x27;EXTRÊME DROITE, DÉFAITE POUR LA DÉMOCRATIE">
+            <p>MICHEL BARNIER : VICTOIRE POUR L&#x27;EXTRÊME DROITE, DÉFAITE POUR LA DÉMOCRATIE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;MOwMHT6JtfA" target="_blank">
+            <img src="https://i2.ytimg.com/vi/MOwMHT6JtfA/hqdefault.jpg" alt="GÉRALD DARMANIN EN CROISADE CONTRE LE PRÉSIDENT DE LA MOSQUÉE DE PESSAC">
+            <p>GÉRALD DARMANIN EN CROISADE CONTRE LE PRÉSIDENT DE LA MOSQUÉE DE PESSAC</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;1ohgKKy_GVs" target="_blank">
+            <img src="https://i2.ytimg.com/vi/1ohgKKy_GVs/hqdefault.jpg" alt="DE PINOCHET À MACRON : 50 NUANCES DE COUPS D&#x27;ÉTAT">
+            <p>DE PINOCHET À MACRON : 50 NUANCES DE COUPS D&#x27;ÉTAT</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;SHpGen_J318" target="_blank">
+            <img src="https://i4.ytimg.com/vi/SHpGen_J318/hqdefault.jpg" alt="FINANCE : LA MACHINE À DÉTRUIRE">
+            <p>FINANCE : LA MACHINE À DÉTRUIRE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;VMp97X1QfLY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/VMp97X1QfLY/hqdefault.jpg" alt="VIOLENCES POLICIÈRES : LA FABRIQUE DE L&#x27;IMPUNITÉ">
+            <p>VIOLENCES POLICIÈRES : LA FABRIQUE DE L&#x27;IMPUNITÉ</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;RcsGvVv_kQA" target="_blank">
+            <img src="https://i3.ytimg.com/vi/RcsGvVv_kQA/hqdefault.jpg" alt="MACRON : LA NOTE INTERNE QUI LÉGITIME UN SCANDALE DÉMOCRATIQUE">
+            <p>MACRON : LA NOTE INTERNE QUI LÉGITIME UN SCANDALE DÉMOCRATIQUE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;5ETDc-TPBFg" target="_blank">
+            <img src="https://i2.ytimg.com/vi/5ETDc-TPBFg/hqdefault.jpg" alt="EMMANUEL MACRON EST-IL EN TRAIN DE FAIRE UN COUP D&#x27;ÉTAT ?">
+            <p>EMMANUEL MACRON EST-IL EN TRAIN DE FAIRE UN COUP D&#x27;ÉTAT ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;MyUs0PbmOoY" target="_blank">
+            <img src="https://i2.ytimg.com/vi/MyUs0PbmOoY/hqdefault.jpg" alt="PARADOXES DES RÉCITS DE TRANSFUGES DE CLASSE">
+            <p>PARADOXES DES RÉCITS DE TRANSFUGES DE CLASSE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;_fEp7PZmzus" target="_blank">
+            <img src="https://i4.ytimg.com/vi/_fEp7PZmzus/hqdefault.jpg" alt="COLLABORATION AVEC L’EXTRÊME DROITE : COMMENT LA RUSSIE DÉSTABILISE LA FRANCE">
+            <p>COLLABORATION AVEC L’EXTRÊME DROITE : COMMENT LA RUSSIE DÉSTABILISE LA FRANCE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;rp73vOl5KOM" target="_blank">
+            <img src="https://i3.ytimg.com/vi/rp73vOl5KOM/hqdefault.jpg" alt="MARSEILLE : LA GRANDE FRACTURE DES &quot;DEUX GAUCHES&quot;">
+            <p>MARSEILLE : LA GRANDE FRACTURE DES &quot;DEUX GAUCHES&quot;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;L42SYyCi44I" target="_blank">
+            <img src="https://i1.ytimg.com/vi/L42SYyCi44I/hqdefault.jpg" alt="COMMENT LE GOUVERNEMENT NETANYAHU VEUT FAIRE DISPARAÎTRE LA CISJORDANIE">
+            <p>COMMENT LE GOUVERNEMENT NETANYAHU VEUT FAIRE DISPARAÎTRE LA CISJORDANIE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;50nkp1l4e30" target="_blank">
+            <img src="https://i2.ytimg.com/vi/50nkp1l4e30/hqdefault.jpg" alt="SORTIR DE L’AMOUR ROMANTIQUE COMME SEUL MODÈLE DE SOCIÉTÉ">
+            <p>SORTIR DE L’AMOUR ROMANTIQUE COMME SEUL MODÈLE DE SOCIÉTÉ</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;QxnPXogD3eI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/QxnPXogD3eI/hqdefault.jpg" alt="GRAND PATRONAT ET EXTRÊME DROITE : LES NOUVEAUX COLLABOS">
+            <p>GRAND PATRONAT ET EXTRÊME DROITE : LES NOUVEAUX COLLABOS</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;I_xbe1mmsYk" target="_blank">
+            <img src="https://i2.ytimg.com/vi/I_xbe1mmsYk/hqdefault.jpg" alt="PALESTINE : 3 ANS D&#x27;ENQUÊTE SUR LA COLONISATION ET L&#x27;APARTHEID">
+            <p>PALESTINE : 3 ANS D&#x27;ENQUÊTE SUR LA COLONISATION ET L&#x27;APARTHEID</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC__xRB5L4toU9yYawt_lIKg">
+          <a href="https://www.youtube.com/watch?v&#x3D;WKC69kIcdOQ" target="_blank">
+            <img src="https://i4.ytimg.com/vi/WKC69kIcdOQ/hqdefault.jpg" alt="LE DIABLE EST UN DRÔLE DE LASCAR">
+            <p>LE DIABLE EST UN DRÔLE DE LASCAR</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;onys-qaS3zY" target="_blank">
+            <img src="https://i4.ytimg.com/vi/onys-qaS3zY/hqdefault.jpg" alt="LES SITUATIONNISTES - Minutes Rouges ep 58">
+            <p>LES SITUATIONNISTES - Minutes Rouges ep 58</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;C1VPkfz6OLA" target="_blank">
+            <img src="https://i4.ytimg.com/vi/C1VPkfz6OLA/hqdefault.jpg" alt="L&#x27;  &quot;ANARCHO&quot; -CAPITALISME, C&#x27;EST DE LA M*RDE - Minutes Rouges ep 57">
+            <p>L&#x27;  &quot;ANARCHO&quot; -CAPITALISME, C&#x27;EST DE LA M*RDE - Minutes Rouges ep 57</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;0YVDCBmthsU" target="_blank">
+            <img src="https://i1.ytimg.com/vi/0YVDCBmthsU/hqdefault.jpg" alt="HISTOIRE DE L&#x27;IRA - Minutes Rouges ep 56">
+            <p>HISTOIRE DE L&#x27;IRA - Minutes Rouges ep 56</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;7sNJu5e54fo" target="_blank">
+            <img src="https://i4.ytimg.com/vi/7sNJu5e54fo/hqdefault.jpg" alt="L&#x27;OPPORTUNISME - Minutes Rouges ep 55">
+            <p>L&#x27;OPPORTUNISME - Minutes Rouges ep 55</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;NVNogEUVKBM" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NVNogEUVKBM/hqdefault.jpg" alt="LE &quot;SYNDICALISME&quot; JAUNE - Minutes Rouges ep 54">
+            <p>LE &quot;SYNDICALISME&quot; JAUNE - Minutes Rouges ep 54</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;gg_y77Dhhq4" target="_blank">
+            <img src="https://i4.ytimg.com/vi/gg_y77Dhhq4/hqdefault.jpg" alt="LE GAUCHISME, LE RETOUR &amp;&amp;#35;40;la maladie infantile du communisme&amp;&amp;#35;41; - Minutes Rouges ep 53">
+            <p>LE GAUCHISME, LE RETOUR &amp;&amp;#35;40;la maladie infantile du communisme&amp;&amp;#35;41; - Minutes Rouges ep 53</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;9B6D96J9nKg" target="_blank">
+            <img src="https://i2.ytimg.com/vi/9B6D96J9nKg/hqdefault.jpg" alt="LE CONGRES DE TOURS - Minutes Rouges ep 52">
+            <p>LE CONGRES DE TOURS - Minutes Rouges ep 52</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;qqRp87_FDyA" target="_blank">
+            <img src="https://i2.ytimg.com/vi/qqRp87_FDyA/hqdefault.jpg" alt="HISTOIRE DU SYNDICALISME ÉTUDIANT - Minutes Rouges ep51">
+            <p>HISTOIRE DU SYNDICALISME ÉTUDIANT - Minutes Rouges ep51</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;GVxJfZDcZcA" target="_blank">
+            <img src="https://i4.ytimg.com/vi/GVxJfZDcZcA/hqdefault.jpg" alt="ANARCHISME INDIVIDUALISTE - Minutes Rouges ep 50">
+            <p>ANARCHISME INDIVIDUALISTE - Minutes Rouges ep 50</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;XmehxTuRd3E" target="_blank">
+            <img src="https://i1.ytimg.com/vi/XmehxTuRd3E/hqdefault.jpg" alt="UNE CRITIQUE MESURÉE DU SPORT &amp;&amp;#35;40;non&amp;&amp;#35;41; - Minutes Rouges ep49">
+            <p>UNE CRITIQUE MESURÉE DU SPORT &amp;&amp;#35;40;non&amp;&amp;#35;41; - Minutes Rouges ep49</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;utTf4V6j0Mo" target="_blank">
+            <img src="https://i2.ytimg.com/vi/utTf4V6j0Mo/hqdefault.jpg" alt="ENTRE PRISON ET INSURRECTION : BLANQUI - Minutes Rouges ep 48">
+            <p>ENTRE PRISON ET INSURRECTION : BLANQUI - Minutes Rouges ep 48</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;Md34-wD2IHw" target="_blank">
+            <img src="https://i2.ytimg.com/vi/Md34-wD2IHw/hqdefault.jpg" alt="EUROCOMMUNISME - Minutes Rouges ep47">
+            <p>EUROCOMMUNISME - Minutes Rouges ep47</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;k6awKI-hby0" target="_blank">
+            <img src="https://i4.ytimg.com/vi/k6awKI-hby0/hqdefault.jpg" alt="FO, LA CIA, GUESDES LE NOOB &amp;&amp;#35;40;et d&#x27;autres trucs&amp;&amp;#35;41; - FAQ 2022">
+            <p>FO, LA CIA, GUESDES LE NOOB &amp;&amp;#35;40;et d&#x27;autres trucs&amp;&amp;#35;41; - FAQ 2022</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;yRfD2wPMxhk" target="_blank">
+            <img src="https://i2.ytimg.com/vi/yRfD2wPMxhk/hqdefault.jpg" alt="HISTOIRE DU PAYSAGE SYNDICAL FRANÇAIS &amp;&amp;#35;40;2/2&amp;&amp;#35;41;">
+            <p>HISTOIRE DU PAYSAGE SYNDICAL FRANÇAIS &amp;&amp;#35;40;2/2&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCNtbFjdJBwoBifQtUjOgUjA">
+          <a href="https://www.youtube.com/watch?v&#x3D;L1putYUn1As" target="_blank">
+            <img src="https://i1.ytimg.com/vi/L1putYUn1As/hqdefault.jpg" alt="HISTOIRE DU PAYSAGE SYNDICAL FRANÇAIS &amp;&amp;#35;40;1/2&amp;&amp;#35;41; - Minutes Rouges">
+            <p>HISTOIRE DU PAYSAGE SYNDICAL FRANÇAIS &amp;&amp;#35;40;1/2&amp;&amp;#35;41; - Minutes Rouges</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;-n0trsMjX_I" target="_blank">
+            <img src="https://i2.ytimg.com/vi/-n0trsMjX_I/hqdefault.jpg" alt="Societer : mon nouveau projet">
+            <p>Societer : mon nouveau projet</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;Y2mU_tmdvZM" target="_blank">
+            <img src="https://i2.ytimg.com/vi/Y2mU_tmdvZM/hqdefault.jpg" alt="Coupe du Monde 98 - Starring Footix">
+            <p>Coupe du Monde 98 - Starring Footix</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;0p3p-EWiF2I" target="_blank">
+            <img src="https://i1.ytimg.com/vi/0p3p-EWiF2I/hqdefault.jpg" alt="Insert Coin : Episode 01">
+            <p>Insert Coin : Episode 01</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;gmHIObu6bDY" target="_blank">
+            <img src="https://i4.ytimg.com/vi/gmHIObu6bDY/hqdefault.jpg" alt="the Mighty Quest for Epic Loot - Aperçu">
+            <p>the Mighty Quest for Epic Loot - Aperçu</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;ambpd54ssFI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/ambpd54ssFI/hqdefault.jpg" alt="Le Bilan [Clip]">
+            <p>Le Bilan [Clip]</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;8heVZRWRmnM" target="_blank">
+            <img src="https://i1.ytimg.com/vi/8heVZRWRmnM/hqdefault.jpg" alt="[la Faute à la Manette] épisode 1">
+            <p>[la Faute à la Manette] épisode 1</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;V67deJ6HYT4" target="_blank">
+            <img src="https://i3.ytimg.com/vi/V67deJ6HYT4/hqdefault.jpg" alt="Civilization IV [MGPB]">
+            <p>Civilization IV [MGPB]</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;IRFlIL6XrjQ" target="_blank">
+            <img src="https://i2.ytimg.com/vi/IRFlIL6XrjQ/hqdefault.jpg" alt="Usul Passion : Fallout New Vegas">
+            <p>Usul Passion : Fallout New Vegas</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;Mjxnag4_U3M" target="_blank">
+            <img src="https://i2.ytimg.com/vi/Mjxnag4_U3M/hqdefault.jpg" alt="3615 Usul - La presse JV">
+            <p>3615 Usul - La presse JV</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;59-aH7Msm9Q" target="_blank">
+            <img src="https://i2.ytimg.com/vi/59-aH7Msm9Q/hqdefault.jpg" alt="3615 Usul - Super 3615 Turbo Final Versus">
+            <p>3615 Usul - Super 3615 Turbo Final Versus</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;ET0TyCV20kc" target="_blank">
+            <img src="https://i2.ytimg.com/vi/ET0TyCV20kc/hqdefault.jpg" alt="3615 Usul - Retour sur l&#x27;année 2013">
+            <p>3615 Usul - Retour sur l&#x27;année 2013</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;gk2duqOalYQ" target="_blank">
+            <img src="https://i4.ytimg.com/vi/gk2duqOalYQ/hqdefault.jpg" alt="3615 Usul - Democracy 3 - [R&amp;D] Louis-Emile Passion : Democracy 3">
+            <p>3615 Usul - Democracy 3 - [R&amp;D] Louis-Emile Passion : Democracy 3</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;sJ71ZiXfv7c" target="_blank">
+            <img src="https://i4.ytimg.com/vi/sJ71ZiXfv7c/hqdefault.jpg" alt="3615 Usul - Le bilan">
+            <p>3615 Usul - Le bilan</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;z7mWih6hCyY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/z7mWih6hCyY/hqdefault.jpg" alt="3615 Usul - Don&#x27;t Starve - [R&amp;D] Usul Passion : Don&#x27;t Starve">
+            <p>3615 Usul - Don&#x27;t Starve - [R&amp;D] Usul Passion : Don&#x27;t Starve</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UC_NukSq2ve_AHVAz_9ikTDg">
+          <a href="https://www.youtube.com/watch?v&#x3D;rVTU6Cqxa64" target="_blank">
+            <img src="https://i3.ytimg.com/vi/rVTU6Cqxa64/hqdefault.jpg" alt="3615 Usul - [R&amp;D] Merci Dorian - L&#x27;équilibrage">
+            <p>3615 Usul - [R&amp;D] Merci Dorian - L&#x27;équilibrage</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;eZfG8bMqF5U" target="_blank">
+            <img src="https://i2.ytimg.com/vi/eZfG8bMqF5U/hqdefault.jpg" alt="La France est plus progressiste qu&#x27;avant -  Vincent Tiberj">
+            <p>La France est plus progressiste qu&#x27;avant -  Vincent Tiberj</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;VvSAmImWDH4" target="_blank">
+            <img src="https://i3.ytimg.com/vi/VvSAmImWDH4/hqdefault.jpg" alt="La France est de droite? @DANYetRAZ">
+            <p>La France est de droite? @DANYetRAZ</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;JNxQkzBMLX0" target="_blank">
+            <img src="https://i3.ytimg.com/vi/JNxQkzBMLX0/hqdefault.jpg" alt="@padustream RÉAGIT  MICHEL BARNIER 1er MINISTRE">
+            <p>@padustream RÉAGIT  MICHEL BARNIER 1er MINISTRE</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;i8xxdi8VvXE" target="_blank">
+            <img src="https://i2.ytimg.com/vi/i8xxdi8VvXE/hqdefault.jpg" alt="La capitalo-communiste ‐  Naïm &amp;&amp;#35;40;Humoriste&amp;&amp;#35;41;">
+            <p>La capitalo-communiste ‐  Naïm &amp;&amp;#35;40;Humoriste&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;JTid_AOhctI" target="_blank">
+            <img src="https://i3.ytimg.com/vi/JTid_AOhctI/hqdefault.jpg" alt="Racisme anti-blanc? Henri Leclerc ridiculise un journaliste">
+            <p>Racisme anti-blanc? Henri Leclerc ridiculise un journaliste</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;WM4oFQ28W3E" target="_blank">
+            <img src="https://i4.ytimg.com/vi/WM4oFQ28W3E/hqdefault.jpg" alt="Olivier Faure met en garde les traîtres du PS.">
+            <p>Olivier Faure met en garde les traîtres du PS.</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;8M_wibuD3nw" target="_blank">
+            <img src="https://i1.ytimg.com/vi/8M_wibuD3nw/hqdefault.jpg" alt="Pourquoi n’y a t il pas de révolution aux USA  ? - Tristan Cabello">
+            <p>Pourquoi n’y a t il pas de révolution aux USA  ? - Tristan Cabello</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;LWc_syRJ7Hc" target="_blank">
+            <img src="https://i1.ytimg.com/vi/LWc_syRJ7Hc/hqdefault.jpg" alt="Un parti de gauche aux USA, c&#x27;est possible? - Tristan Cabello">
+            <p>Un parti de gauche aux USA, c&#x27;est possible? - Tristan Cabello</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;IHGC5-pqJc4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/IHGC5-pqJc4/hqdefault.jpg" alt="Bernie Sanders et Alexandria Ocasio Cortez, la déception - Tristan Cabello">
+            <p>Bernie Sanders et Alexandria Ocasio Cortez, la déception - Tristan Cabello</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;N22zJAzgA8g" target="_blank">
+            <img src="https://i3.ytimg.com/vi/N22zJAzgA8g/hqdefault.jpg" alt="Y aura t il sanction pour Kamala Harris à cause du  soutien au gén0cide?- Tristan Cabello">
+            <p>Y aura t il sanction pour Kamala Harris à cause du  soutien au gén0cide?- Tristan Cabello</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;ooca4ESNmJI" target="_blank">
+            <img src="https://i4.ytimg.com/vi/ooca4ESNmJI/hqdefault.jpg" alt="Le wokisme et Evergreen existent-ils encore aux USA ?">
+            <p>Le wokisme et Evergreen existent-ils encore aux USA ?</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;qdBsaeuEgXg" target="_blank">
+            <img src="https://i2.ytimg.com/vi/qdBsaeuEgXg/hqdefault.jpg" alt="À quand une révolution aux USA? - Tristan Cabello est FACE à À GAUCHE - Épisode 38">
+            <p>À quand une révolution aux USA? - Tristan Cabello est FACE à À GAUCHE - Épisode 38</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;Vyu2X_Pfkfg" target="_blank">
+            <img src="https://i3.ytimg.com/vi/Vyu2X_Pfkfg/hqdefault.jpg" alt="Lucie Castets raconte son tête à tête avec Macron">
+            <p>Lucie Castets raconte son tête à tête avec Macron</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;Bdz9f-ddNnU" target="_blank">
+            <img src="https://i3.ytimg.com/vi/Bdz9f-ddNnU/hqdefault.jpg" alt="Jean-Luc Mélenchon menace Macron de destitution et accepte un gouv sans LFI">
+            <p>Jean-Luc Mélenchon menace Macron de destitution et accepte un gouv sans LFI</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UClDye0T4xTEq46sA5evq9fA">
+          <a href="https://www.youtube.com/watch?v&#x3D;Yc-rjTBjFHk" target="_blank">
+            <img src="https://i2.ytimg.com/vi/Yc-rjTBjFHk/hqdefault.jpg" alt="Le principal obstacle à l&#x27;union c&#x27;est Parti socialiste - @JLMelenchon">
+            <p>Le principal obstacle à l&#x27;union c&#x27;est Parti socialiste - @JLMelenchon</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;37H1sYi1fB8" target="_blank">
+            <img src="https://i4.ytimg.com/vi/37H1sYi1fB8/hqdefault.jpg" alt="Alma Dufour humilie une militante pro-Israël sur LCI">
+            <p>Alma Dufour humilie une militante pro-Israël sur LCI</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;VSvzIpRHTFo" target="_blank">
+            <img src="https://i3.ytimg.com/vi/VSvzIpRHTFo/hqdefault.jpg" alt="Macron ne fait rien pour sanctionner Israël ! – Thomas Portes">
+            <p>Macron ne fait rien pour sanctionner Israël ! – Thomas Portes</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;31ZhLk0ZVHo" target="_blank">
+            <img src="https://i4.ytimg.com/vi/31ZhLk0ZVHo/hqdefault.jpg" alt="Il est dégoûté 😂 Sois heureux mec 😂😂 Profite de la vie un peu 😂">
+            <p>Il est dégoûté 😂 Sois heureux mec 😂😂 Profite de la vie un peu 😂</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;NhvWXn2VHno" target="_blank">
+            <img src="https://i3.ytimg.com/vi/NhvWXn2VHno/hqdefault.jpg" alt="Israël doit défiler sous bannière neutre aux JO. – Thomas Portes">
+            <p>Israël doit défiler sous bannière neutre aux JO. – Thomas Portes</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;SxAAXEMrC-E" target="_blank">
+            <img src="https://i4.ytimg.com/vi/SxAAXEMrC-E/hqdefault.jpg" alt="Face au RN, on respecte les gestes barrières 🫡😂">
+            <p>Face au RN, on respecte les gestes barrières 🫡😂</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;lV0Wp8nilVo" target="_blank">
+            <img src="https://i1.ytimg.com/vi/lV0Wp8nilVo/hqdefault.jpg" alt="Raphaël Arnault &amp;&amp;#35;40;fiché Swag&amp;&amp;#35;41; fait son entrée à l&#x27;Assemblée ✊">
+            <p>Raphaël Arnault &amp;&amp;#35;40;fiché Swag&amp;&amp;#35;41; fait son entrée à l&#x27;Assemblée ✊</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;FL5UtyPmFiQ" target="_blank">
+            <img src="https://i3.ytimg.com/vi/FL5UtyPmFiQ/hqdefault.jpg" alt="Les amis, on va y arriver ! ❤️ &amp;#35;Mélenchon &amp;#35;Hisaishi">
+            <p>Les amis, on va y arriver ! ❤️ &amp;#35;Mélenchon &amp;#35;Hisaishi</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;WhULDK482mc" target="_blank">
+            <img src="https://i4.ytimg.com/vi/WhULDK482mc/hqdefault.jpg" alt="L. Boyard explique comment faire changer d&#x27;avis les électeurs du RN">
+            <p>L. Boyard explique comment faire changer d&#x27;avis les électeurs du RN</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;5iPfIDAG3UQ" target="_blank">
+            <img src="https://i2.ytimg.com/vi/5iPfIDAG3UQ/hqdefault.jpg" alt="Bardella n&#x27;a pas voulu débattre avec C. Guetté mais elle le termine quand même">
+            <p>Bardella n&#x27;a pas voulu débattre avec C. Guetté mais elle le termine quand même</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;MhM_4Ch1Ask" target="_blank">
+            <img src="https://i2.ytimg.com/vi/MhM_4Ch1Ask/hqdefault.jpg" alt="Bardella MENT sur ses origines sociales ? L&#x27;art du storytelling 😂 – Pierre-Stéphane Fort">
+            <p>Bardella MENT sur ses origines sociales ? L&#x27;art du storytelling 😂 – Pierre-Stéphane Fort</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;Cozwdnu8XC0" target="_blank">
+            <img src="https://i4.ytimg.com/vi/Cozwdnu8XC0/hqdefault.jpg" alt="Manon Aubry crucifie ce journaliste de CNews sur le &quot;vote communautaire&quot; de LFI &amp;&amp;#35;40;partie 2&amp;&amp;#35;41;">
+            <p>Manon Aubry crucifie ce journaliste de CNews sur le &quot;vote communautaire&quot; de LFI &amp;&amp;#35;40;partie 2&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;O6z9-wG_pbo" target="_blank">
+            <img src="https://i4.ytimg.com/vi/O6z9-wG_pbo/hqdefault.jpg" alt="Un journaliste de CNews se fait recadrer par Manon Aubry &amp;&amp;#35;40;partie 1&amp;&amp;#35;41;">
+            <p>Un journaliste de CNews se fait recadrer par Manon Aubry &amp;&amp;#35;40;partie 1&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;9vX9h2WobxI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/9vX9h2WobxI/hqdefault.jpg" alt="&quot;J&#x27;ai tellement honte pour la France&quot; Un macroniste se fait recadrer par une passante &amp;#35;Guérini">
+            <p>&quot;J&#x27;ai tellement honte pour la France&quot; Un macroniste se fait recadrer par une passante &amp;#35;Guérini</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;aR53IT43AlI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/aR53IT43AlI/hqdefault.jpg" alt="A. Léaument : Il y a une libération de la parole raciste depuis la percée du RN">
+            <p>A. Léaument : Il y a une libération de la parole raciste depuis la percée du RN</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCE38FJeWDQ-ViY6buSKWoJg">
+          <a href="https://www.youtube.com/watch?v&#x3D;m4-LPcoud4U" target="_blank">
+            <img src="https://i2.ytimg.com/vi/m4-LPcoud4U/hqdefault.jpg" alt="Bompard à Bardella : &quot;Personne ne part de son pays par bonheur !&quot;">
+            <p>Bompard à Bardella : &quot;Personne ne part de son pays par bonheur !&quot;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;tx6vTiw8OkI" target="_blank">
+            <img src="https://i1.ytimg.com/vi/tx6vTiw8OkI/hqdefault.jpg" alt="MICHEL BARNIER 1er MINISTRE : le COMPROMIS MACRON-LEPEN !!">
+            <p>MICHEL BARNIER 1er MINISTRE : le COMPROMIS MACRON-LEPEN !!</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;W3k0FeM-Rw8" target="_blank">
+            <img src="https://i4.ytimg.com/vi/W3k0FeM-Rw8/hqdefault.jpg" alt="MACRON L&#x27;ENFANT GATÉ GRONDÉ PAR MANON AUBRY  &amp;#35;lfi &amp;#35;nfp &amp;#35;macron &amp;#35;legislatives">
+            <p>MACRON L&#x27;ENFANT GATÉ GRONDÉ PAR MANON AUBRY  &amp;#35;lfi &amp;#35;nfp &amp;#35;macron &amp;#35;legislatives</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;tSUkLIAgX3M" target="_blank">
+            <img src="https://i1.ytimg.com/vi/tSUkLIAgX3M/hqdefault.jpg" alt="MANON AUBRY RECADRE LE FUTUR EX GOUVERNEMENT &amp;#35;lfi  &amp;#35;nfp  &amp;#35;macron  &amp;#35;legislatives">
+            <p>MANON AUBRY RECADRE LE FUTUR EX GOUVERNEMENT &amp;#35;lfi  &amp;#35;nfp  &amp;#35;macron  &amp;#35;legislatives</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;2kjwDNpFxqY" target="_blank">
+            <img src="https://i3.ytimg.com/vi/2kjwDNpFxqY/hqdefault.jpg" alt="MATHILDE PANOT DÉNONCE LE DÉNI DE MACRON &amp;#35;macron &amp;#35;lfi &amp;#35;nfp &amp;#35;legislatives">
+            <p>MATHILDE PANOT DÉNONCE LE DÉNI DE MACRON &amp;#35;macron &amp;#35;lfi &amp;#35;nfp &amp;#35;legislatives</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;Kr7VKl_IUdk" target="_blank">
+            <img src="https://i4.ytimg.com/vi/Kr7VKl_IUdk/hqdefault.jpg" alt="LA BRÈCHE - JO 2024 : THOMAS JOLY, IMANE KHELIF, JLM, MACRON, LÉON MARCHAND ET CO !">
+            <p>LA BRÈCHE - JO 2024 : THOMAS JOLY, IMANE KHELIF, JLM, MACRON, LÉON MARCHAND ET CO !</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;O5snda5fgSQ" target="_blank">
+            <img src="https://i4.ytimg.com/vi/O5snda5fgSQ/hqdefault.jpg" alt="IMANE KHELIF : les TRANSPHOBES considèrent cette FEMME BIOLOGIQUE COMME UN HOMME ??? &amp;&amp;#35;40;JO 2024&amp;&amp;#35;41;">
+            <p>IMANE KHELIF : les TRANSPHOBES considèrent cette FEMME BIOLOGIQUE COMME UN HOMME ??? &amp;&amp;#35;40;JO 2024&amp;&amp;#35;41;</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;QbLXolFhq9I" target="_blank">
+            <img src="https://i2.ytimg.com/vi/QbLXolFhq9I/hqdefault.jpg" alt="BOMPARD SERRE LA VIS SUR LE SERRAGE DE MAIN &amp;#35;lfi  &amp;#35;bompard  &amp;#35;rn  &amp;#35;assembléenationale   &amp;#35;nfp">
+            <p>BOMPARD SERRE LA VIS SUR LE SERRAGE DE MAIN &amp;#35;lfi  &amp;#35;bompard  &amp;#35;rn  &amp;#35;assembléenationale   &amp;#35;nfp</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;m3QPOE6BXBI" target="_blank">
+            <img src="https://i2.ytimg.com/vi/m3QPOE6BXBI/hqdefault.jpg" alt="AYMERIC CARON RÉVÈLE L&#x27;HORREUR À GAZA &amp;#35;palestine  &amp;#35;caron &amp;#35;lfi  &amp;#35;netanyahu">
+            <p>AYMERIC CARON RÉVÈLE L&#x27;HORREUR À GAZA &amp;#35;palestine  &amp;#35;caron &amp;#35;lfi  &amp;#35;netanyahu</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;mhd-aFQjp-4" target="_blank">
+            <img src="https://i2.ytimg.com/vi/mhd-aFQjp-4/hqdefault.jpg" alt="MATHILDE PANOT DIT LES TERMES SUR L’ACCUEIL DES ATHLÈTES &amp;#35;jo2024 &amp;#35;panot &amp;#35;nfp &amp;#35;lfi">
+            <p>MATHILDE PANOT DIT LES TERMES SUR L’ACCUEIL DES ATHLÈTES &amp;#35;jo2024 &amp;#35;panot &amp;#35;nfp &amp;#35;lfi</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;rPNu0hvn6Ko" target="_blank">
+            <img src="https://i3.ytimg.com/vi/rPNu0hvn6Ko/hqdefault.jpg" alt="CNEWS/EUROPE 1 VEULENT QUE MANUEL BOMPARD VOTE RN &amp;#35;nfp &amp;#35;lfi &amp;#35;jlm">
+            <p>CNEWS/EUROPE 1 VEULENT QUE MANUEL BOMPARD VOTE RN &amp;#35;nfp &amp;#35;lfi &amp;#35;jlm</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;frqe6ctBdQs" target="_blank">
+            <img src="https://i3.ytimg.com/vi/frqe6ctBdQs/hqdefault.jpg" alt="MÉLENCHON DÉTRUIT LES MACRONISTES &quot;DE GAUCHE&quot; &amp;#35;lfi &amp;#35;nfp &amp;#35;melenchon &amp;#35;macron">
+            <p>MÉLENCHON DÉTRUIT LES MACRONISTES &quot;DE GAUCHE&quot; &amp;#35;lfi &amp;#35;nfp &amp;#35;melenchon &amp;#35;macron</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;syqCVE--Bqc" target="_blank">
+            <img src="https://i4.ytimg.com/vi/syqCVE--Bqc/hqdefault.jpg" alt="MATHILDE PANOT RECADRE DARMANIN SUR LE CORDON RÉPUBLICAIN &amp;#35;lfi &amp;#35;nfp &amp;#35;elections &amp;#35;darmanin">
+            <p>MATHILDE PANOT RECADRE DARMANIN SUR LE CORDON RÉPUBLICAIN &amp;#35;lfi &amp;#35;nfp &amp;#35;elections &amp;#35;darmanin</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;4qo28w3Yhns" target="_blank">
+            <img src="https://i1.ytimg.com/vi/4qo28w3Yhns/hqdefault.jpg" alt="DAVID GUIRAUD ET MANON AUBRY DÉNONCENT LA DICTATURE MACRONISTE &amp;#35;legislatives  &amp;#35;macron &amp;#35;melenchon">
+            <p>DAVID GUIRAUD ET MANON AUBRY DÉNONCENT LA DICTATURE MACRONISTE &amp;#35;legislatives  &amp;#35;macron &amp;#35;melenchon</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;U3CKOpWXJRw" target="_blank">
+            <img src="https://i2.ytimg.com/vi/U3CKOpWXJRw/hqdefault.jpg" alt="DAVID GUIRAUD TORPILLE L&#x27;ELECTION DE YAËL BRAUN-PIVET AU PERCHOIR SUR BFMTV !! &amp;#35;lfi &amp;#35;nfp &amp;#35;jlm">
+            <p>DAVID GUIRAUD TORPILLE L&#x27;ELECTION DE YAËL BRAUN-PIVET AU PERCHOIR SUR BFMTV !! &amp;#35;lfi &amp;#35;nfp &amp;#35;jlm</p>
+          </a>
+        </div>
+        <div class="video-item" data-channel="UCbbmy1wFvL1Xq0G9I-mLtQg">
+          <a href="https://www.youtube.com/watch?v&#x3D;dg4x6m7paBY" target="_blank">
+            <img src="https://i1.ytimg.com/vi/dg4x6m7paBY/hqdefault.jpg" alt="LOUIS BOYARD REMET LES PENDULES À L&#x27;HEURE AU SUJET DE TUBIANA SUR BFMTV &amp;#35;lfi &amp;#35;jlm &amp;#35;nfp">
+            <p>LOUIS BOYARD REMET LES PENDULES À L&#x27;HEURE AU SUJET DE TUBIANA SUR BFMTV &amp;#35;lfi &amp;#35;jlm &amp;#35;nfp</p>
+          </a>
+        </div>
+    </div>
+
+    <script>
+      function filterVideos() {
+        var filterValue = document.getElementById('channel-filter').value;
+        var videos = document.querySelectorAll('.video-item');
+
+        videos.forEach(function(video) {
+          if (filterValue === 'all' || video.getAttribute('data-channel') === filterValue) {
+            video.style.display = 'block'; // Show matching videos
+          } else {
+            video.style.display = 'none'; // Hide non-matching videos
+          }
+        });
+      }
+
+      // Initially show all videos
+      filterVideos();
+    </script>
+  </body>
+</html>
+
