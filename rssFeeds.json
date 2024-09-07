@@ -1,62 +1,677 @@
 [
   {
+    "title": "Canard Réfractaire",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWGsN59FON3vOtXCozQPsZQ",
-    "title": "Le Canard Réfractaire",
     "channelId": "UCWGsN59FON3vOtXCozQPsZQ"
   },
   {
+    "title": "Diable Positif",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCI_FnSJPNGd3Y3IL0PwD-NQ",
-    "title": "Le Diable Positif",
     "channelId": "UCI_FnSJPNGd3Y3IL0PwD-NQ"
   },
   {
+    "title": "Oui d'accord",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4wFTE-fzVmghgtOcD5CQkA",
-    "title": "Oui daccord",
     "channelId": "UC4wFTE-fzVmghgtOcD5CQkA"
   },
   {
+    "title": "Partager C'est Sympa",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCr_3nQ4eRCwm_XUDpf62MAg",
-    "title": "Partager cest Sympa",
     "channelId": "UCr_3nQ4eRCwm_XUDpf62MAg"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCT67YOMntJxfRnO_9bXDpvw",
     "title": "Le Média",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCT67YOMntJxfRnO_9bXDpvw",
     "channelId": "UCT67YOMntJxfRnO_9bXDpvw"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYkZbyXcVmtdRUpCBi713vw",
     "title": "Pure Politique",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYkZbyXcVmtdRUpCBi713vw",
     "channelId": "UCYkZbyXcVmtdRUpCBi713vw"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC__xRB5L4toU9yYawt_lIKg",
-    "title": "Blast",
+    "title": "BLAST Le souffle de l'info",
+    "url": " https://www.youtube.com/feeds/videos.xml?channel_id=UC__xRB5L4toU9yYawt_lIKg",
     "channelId": "UC__xRB5L4toU9yYawt_lIKg"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNtbFjdJBwoBifQtUjOgUjA",
     "title": "Minutes Rouges",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNtbFjdJBwoBifQtUjOgUjA",
     "channelId": "UCNtbFjdJBwoBifQtUjOgUjA"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_NukSq2ve_AHVAz_9ikTDg",
     "title": "Usul",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_NukSq2ve_AHVAz_9ikTDg",
     "channelId": "UC_NukSq2ve_AHVAz_9ikTDg"
   },
   {
+    "title": "À gauche",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClDye0T4xTEq46sA5evq9fA",
-    "title": "A Gauche",
     "channelId": "UClDye0T4xTEq46sA5evq9fA"
   },
   {
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCE38FJeWDQ-ViY6buSKWoJg",
     "title": "Glupatate",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCE38FJeWDQ-ViY6buSKWoJg",
     "channelId": "UCE38FJeWDQ-ViY6buSKWoJg"
   },
   {
+    "title": "PaduStream",
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbbmy1wFvL1Xq0G9I-mLtQg",
-    "title": "Padustream",
     "channelId": "UCbbmy1wFvL1Xq0G9I-mLtQg"
+  },
+  {
+    "title": "SORTIE D'USINE",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyEgkeeUK5_eJuo72PvINSA",
+    "channelId": "UCyEgkeeUK5_eJuo72PvINSA"
+  },
+  {
+    "title": "Heu?reka",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7sXGI8p8PvKosLWagkK9wQ",
+    "channelId": "UC7sXGI8p8PvKosLWagkK9wQ"
+  },
+  {
+    "title": "StreetPress",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCmbhrKMU_X7Gi47bZEEajEQ",
+    "channelId": "UCmbhrKMU_X7Gi47bZEEajEQ"
+  },
+  {
+    "title": "Bolchegeek",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEfpbmshpf-G90fGLla73kA",
+    "channelId": "UCEfpbmshpf-G90fGLla73kA"
+  },
+  {
+    "title": "Kriss Papillon",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBOEy0ETYHd5gWQ2DayMv_g",
+    "channelId": "UCBOEy0ETYHd5gWQ2DayMv_g"
+  },
+  {
+    "title": "Mediapart",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdnaDhU-LDQrIEEmSIfq0-Q",
+    "channelId": "UCdnaDhU-LDQrIEEmSIfq0-Q"
+  },
+  {
+    "title": "Studio Crapulax / La France en marche",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3Mj5hKC0Nbqv3YXHLKxdyw",
+    "channelId": "UC3Mj5hKC0Nbqv3YXHLKxdyw"
+  },
+  {
+    "title": "La Philature",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKvJ_bDoiJUT6ZIuXk32sLw",
+    "channelId": "UCKvJ_bDoiJUT6ZIuXk32sLw"
+  },
+  {
+    "title": "Osons Causer",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVeMw72tepFl1Zt5fvf9QKQ",
+    "channelId": "UCVeMw72tepFl1Zt5fvf9QKQ"
+  },
+  {
+    "title": "Tzitzimitl - Esprit Critique",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0yPCUmdMZIGtnxSnx5_ifA",
+    "channelId": "UC0yPCUmdMZIGtnxSnx5_ifA"
+  },
+  {
+    "title": "DANY et RAZ",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeQRERCvEY3-ZeQONwnx0zw",
+    "channelId": "UCeQRERCvEY3-ZeQONwnx0zw"
+  },
+  {
+    "title": "Trouble Fait",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCynFUJ4zUVuh3GX7bABTjGQ",
+    "channelId": "UCynFUJ4zUVuh3GX7bABTjGQ"
+  },
+  {
+    "title": "KaLee Vision",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrHMeoPLDWw-_xfFMN-585g",
+    "channelId": "UCrHMeoPLDWw-_xfFMN-585g"
+  },
+  {
+    "title": "Hacking Social",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGeFgMJfWclTWuPw8Ok5FUQ",
+    "channelId": "UCGeFgMJfWclTWuPw8Ok5FUQ"
+  },
+  {
+    "title": "Kraken Debrief",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjaZck-he8x_2hDmdlvb-4w",
+    "channelId": "UCjaZck-he8x_2hDmdlvb-4w"
+  },
+  {
+    "title": "Politikon",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0HxyEc_ojRJ1oJXS5K6oaA",
+    "channelId": "UC0HxyEc_ojRJ1oJXS5K6oaA"
+  },
+  {
+    "title": "Pas Dühring",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjpS9OmCINPdtPtmMBJ0AqA",
+    "channelId": "UCjpS9OmCINPdtPtmMBJ0AqA"
+  },
+  {
+    "title": "Paroles D'Honneur",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTth6-5ZiCD_CUJ6xOMug_w",
+    "channelId": "UCTth6-5ZiCD_CUJ6xOMug_w"
+  },
+  {
+    "title": "Histony",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCt8ctlakIflnSG0ebFps7cw",
+    "channelId": "UCt8ctlakIflnSG0ebFps7cw"
+  },
+  {
+    "title": "Communistes Français",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9D5DIxxJMEbi8MfQkRG5Zw",
+    "channelId": "UC9D5DIxxJMEbi8MfQkRG5Zw"
+  },
+  {
+    "title": "Histoires Crépues",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVuMMUfqEI448VKbkpuNPHQ",
+    "channelId": "UCVuMMUfqEI448VKbkpuNPHQ"
+  },
+  {
+    "title": "Le Monde diplomatique",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZ-hXrLYUFHBnkM0Vb2mqw",
+    "channelId": "UCJZ-hXrLYUFHBnkM0Vb2mqw"
+  },
+  {
+    "title": "Café marxiste",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_DXo7fgqGivWCpIusQrZhA",
+    "channelId": "UC_DXo7fgqGivWCpIusQrZhA"
+  },
+  {
+    "title": "objection. exe",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEXdpMe3i4qWe88zGx7v9og",
+    "channelId": "UCEXdpMe3i4qWe88zGx7v9og"
+  },
+  {
+    "title": "Arrêt sur images",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXHWT_QoQSsdGXbqF0hAMtg",
+    "channelId": "UCXHWT_QoQSsdGXbqF0hAMtg"
+  },
+  {
+    "title": "Philosopher avec Dominique Pagani",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkWh7zm1BqtCdIN6QL3X_fw",
+    "channelId": "UCkWh7zm1BqtCdIN6QL3X_fw"
+  },
+  {
+    "title": "Cass Andre",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrzwP_TnWL_FA-PjIZ9qaZg",
+    "channelId": "UCrzwP_TnWL_FA-PjIZ9qaZg"
+  },
+  {
+    "title": "VU FranceTV",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqt99sKYNTxqlHtzV9weUYA",
+    "channelId": "UCqt99sKYNTxqlHtzV9weUYA"
+  },
+  {
+    "title": "Alètheia",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCehsQEy2LkO6x2o9oqlB1Wg",
+    "channelId": "UCehsQEy2LkO6x2o9oqlB1Wg"
+  },
+  {
+    "title": "lundimatin",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2wrXSZMid7OiCVwCfVpHiA",
+    "channelId": "UC2wrXSZMid7OiCVwCfVpHiA"
+  },
+  {
+    "title": "7 jours sur Terre",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCRDafCFB27KOBXvgc6kgS0A",
+    "channelId": "UCRDafCFB27KOBXvgc6kgS0A"
+  },
+  {
+    "title": "Terra Bellum",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPiye7__vJMKdBxebtERd7g",
+    "channelId": "UCPiye7__vJMKdBxebtERd7g"
+  },
+  {
+    "title": "MrMondialisation",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChr5O2aamBLN1ZVkiIj8FdQ",
+    "channelId": "UChr5O2aamBLN1ZVkiIj8FdQ"
+  },
+  {
+    "title": "ÉLUCID",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkgO4A3Fzm5D9Xu1Y_4vCKQ",
+    "channelId": "UCkgO4A3Fzm5D9Xu1Y_4vCKQ"
+  },
+  {
+    "title": "Off Investigation",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEFGCs68E9Vr5te5qZuJsbg",
+    "channelId": "UCEFGCs68E9Vr5te5qZuJsbg"
+  },
+  {
+    "title": "Romain Migus",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOrjKgr_Xb463S6sqAPzgLQ",
+    "channelId": "UCOrjKgr_Xb463S6sqAPzgLQ"
+  },
+  {
+    "title": "Ami des lobbies",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkkY_V2YSa_oln5CXm4zDzw",
+    "channelId": "UCkkY_V2YSa_oln5CXm4zDzw"
+  },
+  {
+    "title": "PraxisBouwmarkt",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjPRleHORdCo5X9RTD0Sp0A",
+    "channelId": "UCjPRleHORdCo5X9RTD0Sp0A"
+  },
+  {
+    "title": "Science de comptoir",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCE_LWXcsdp7cWbo4DR4ZA-A",
+    "channelId": "UCE_LWXcsdp7cWbo4DR4ZA-A"
+  },
+  {
+    "title": "Aurelien Barrau",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwgqYNmYaij2_8hq_tOFyZw",
+    "channelId": "UCwgqYNmYaij2_8hq_tOFyZw"
+  },
+  {
+    "title": "Soif de Sens",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0suOBgRAZPCy5kD6IS23zw",
+    "channelId": "UC0suOBgRAZPCy5kD6IS23zw"
+  },
+  {
+    "title": "magicjackproduction",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxiI4m9jBaPuyDZcZRrwNRw",
+    "channelId": "UCxiI4m9jBaPuyDZcZRrwNRw"
+  },
+  {
+    "title": "L214 Éthique & Animaux",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFrDDP81MX_QfOHrRZOgD4g",
+    "channelId": "UCFrDDP81MX_QfOHrRZOgD4g"
+  },
+  {
+    "title": "AVA France",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6YR5TMw3LhflyuResAFLog",
+    "channelId": "UC6YR5TMw3LhflyuResAFLog"
+  },
+  {
+    "title": "FUTUR ASSO",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXVBLq_k7lkbn0eX78HTJnA",
+    "channelId": "UCXVBLq_k7lkbn0eX78HTJnA"
+  },
+  {
+    "title": "Stupid Economics",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyJDHgrsUKuWLe05GvC2lng",
+    "channelId": "UCyJDHgrsUKuWLe05GvC2lng"
+  },
+  {
+    "title": "Nota Bene",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCP46_MXP_WG_auH88FnfS1A",
+    "channelId": "UCP46_MXP_WG_auH88FnfS1A"
+  },
+  {
+    "title": "C'est une autre histoire",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKjDY4joMPcoRMmd-G1yz1Q",
+    "channelId": "UCKjDY4joMPcoRMmd-G1yz1Q"
+  },
+  {
+    "title": "Monsieur Phi",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqA8H22FwgBVcF3GJpp0MQw",
+    "channelId": "UCqA8H22FwgBVcF3GJpp0MQw"
+  },
+  {
+    "title": "G Milgram",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAoUBng0Mfu0qn4lPimS6MA",
+    "channelId": "UCAoUBng0Mfu0qn4lPimS6MA"
+  },
+  {
+    "title": "Dead Will",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtLkNuzB2_j2z7SFdvkiCww",
+    "channelId": "UCtLkNuzB2_j2z7SFdvkiCww"
+  },
+  {
+    "title": "Linguisticae",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCofQxJWd4qkqc7ZgaLkZfcw",
+    "channelId": "UCofQxJWd4qkqc7ZgaLkZfcw"
+  },
+  {
+    "title": "Sabine",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6ykvOBly603Ay7SRrbZANQ",
+    "channelId": "UC6ykvOBly603Ay7SRrbZANQ"
+  },
+  {
+    "title": "Pays des Alternatives",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHYmfuCA-8A2GQ9rguicKRQ",
+    "channelId": "UCHYmfuCA-8A2GQ9rguicKRQ"
+  },
+  {
+    "title": "Basta!",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgPKxmP6HjaVrAcIQFqBR6g",
+    "channelId": "UCgPKxmP6HjaVrAcIQFqBR6g"
+  },
+  {
+    "title": "Acrimed Vidéos",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqEwL9lUdH-ccrN4Rgd0sEw",
+    "channelId": "UCqEwL9lUdH-ccrN4Rgd0sEw"
+  },
+  {
+    "title": "Le Monde Moderne",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCA3dZqGawAvJO6Lexbj8EGg",
+    "channelId": "UCA3dZqGawAvJO6Lexbj8EGg"
+  },
+  {
+    "title": "Patchwork",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDZGLsVLt3VNVqRYHwm8UwA",
+    "channelId": "UCDZGLsVLt3VNVqRYHwm8UwA"
+  },
+  {
+    "title": "Le Réveilleur",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1EacOJoqsKaYxaDomTCTEQ",
+    "channelId": "UC1EacOJoqsKaYxaDomTCTEQ"
+  },
+  {
+    "title": "Le Pixel Mort",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeXsZz8C5sUZe1YgDxR6j9A",
+    "channelId": "UCeXsZz8C5sUZe1YgDxR6j9A"
+  },
+  {
+    "title": "Le Fou Allié",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyXDiaeiPtXkZ3RhDYVCs_g",
+    "channelId": "UCyXDiaeiPtXkZ3RhDYVCs_g"
+  },
+  {
+    "title": "Espoir Commun",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAexlMUoNhMpjtqTj_3VBYA",
+    "channelId": "UCAexlMUoNhMpjtqTj_3VBYA"
+  },
+  {
+    "title": "L'Histoire trouve toujours un chemin",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChD5UkL8LtcLk_D0-obwW8w",
+    "channelId": "UChD5UkL8LtcLk_D0-obwW8w"
+  },
+  {
+    "title": "Civicio",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKydJwfkJMRlZFi5M-6sZvQ",
+    "channelId": "UCKydJwfkJMRlZFi5M-6sZvQ"
+  },
+  {
+    "title": "Disclose",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC76pM1Auet3YolJ5vYLeINQ",
+    "channelId": "UC76pM1Auet3YolJ5vYLeINQ"
+  },
+  {
+    "title": "La Minute du droit du travail",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCaZpGcWmzPqzY-LXBzja-Dw",
+    "channelId": "UCaZpGcWmzPqzY-LXBzja-Dw"
+  },
+  {
+    "title": "Journal l'Humanité",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCar0yo-PpeMk51m116826pQ",
+    "channelId": "UCar0yo-PpeMk51m116826pQ"
+  },
+  {
+    "title": "L'école du chat noir",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqJ4PgXsd2KFY2K2Vldc-MQ",
+    "channelId": "UCqJ4PgXsd2KFY2K2Vldc-MQ"
+  },
+  {
+    "title": "Guerre de Classe",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCio9pX2dEW7mFncFsZLG6-g",
+    "channelId": "UCio9pX2dEW7mFncFsZLG6-g"
+  },
+  {
+    "title": "Le Tropeur",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrpqKTyAxJWSpwmA_BfWTjw",
+    "channelId": "UCrpqKTyAxJWSpwmA_BfWTjw"
+  },
+  {
+    "title": "Lex Tutor",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7xEMt8WfTdHgUEp-fUp7ZQ",
+    "channelId": "UC7xEMt8WfTdHgUEp-fUp7ZQ"
+  },
+  {
+    "title": "TAOQAN",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0Miwa4YsGduqJFYmpCSXeg",
+    "channelId": "UC0Miwa4YsGduqJFYmpCSXeg"
+  },
+  {
+    "title": "Vous Avez Le Droit",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCynBu7PDfJsCXeCSqT1QUQw",
+    "channelId": "UCynBu7PDfJsCXeCSqT1QUQw"
+  },
+  {
+    "title": "Jeunesse Senlas",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCK21WepGuFTb9BHb49CuvLQ",
+    "channelId": "UCK21WepGuFTb9BHb49CuvLQ"
+  },
+  {
+    "title": "Le Fils de Pub",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOA6N3AUAr1Y5c9bShaM4Vw",
+    "channelId": "UCOA6N3AUAr1Y5c9bShaM4Vw"
+  },
+  {
+    "title": "Franck Brusset",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHdnhpYaJHKz0tBEf3Z1KAw",
+    "channelId": "UCHdnhpYaJHKz0tBEf3Z1KAw"
+  },
+  {
+    "title": "Frustration magazine",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHCwlzgXqqjrNxfVOmLsU5w",
+    "channelId": "UCHCwlzgXqqjrNxfVOmLsU5w"
+  },
+  {
+    "title": "Jeune Garde Antifasciste",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQrtymR7jWh3JEYeLY4Yj-g",
+    "channelId": "UCQrtymR7jWh3JEYeLY4Yj-g"
+  },
+  {
+    "title": "Cathédrale Osseuse",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCK9kGD2ER_HguQ3VNOgahbA",
+    "channelId": "UCK9kGD2ER_HguQ3VNOgahbA"
+  },
+  {
+    "title": "Cemil Şanlı",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6-BWVphnrCj5xNL73qOd0w",
+    "channelId": "UC6-BWVphnrCj5xNL73qOd0w"
+  },
+  {
+    "title": "Reporterre 🌍| le média de l'écologie",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDn6zvBZNEWUv44xjgELicA",
+    "channelId": "UCDn6zvBZNEWUv44xjgELicA"
+  },
+  {
+    "title": "Le Grand Soir",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCi6PnwyzkAx7M50l48OrhBA",
+    "channelId": "UCi6PnwyzkAx7M50l48OrhBA"
+  },
+  {
+    "title": "Les 2 Rives",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxtMhJlFpK3PJddMyP9tpsg",
+    "channelId": "UCxtMhJlFpK3PJddMyP9tpsg"
+  },
+  {
+    "title": "Là-bas si j'y suis",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMAT1VA7o6bD6qnpBBZ_New",
+    "channelId": "UCMAT1VA7o6bD6qnpBBZ_New"
+  },
+  {
+    "title": "Lex Imperii",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdrC0GnbagXnOrMvFcQS-YA",
+    "channelId": "UCdrC0GnbagXnOrMvFcQS-YA"
+  },
+  {
+    "title": "Philoxime",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdKTlsmvczkdvGjiLinQwmw",
+    "channelId": "UCdKTlsmvczkdvGjiLinQwmw"
+  },
+  {
+    "title": "NAÏM",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCL5WDPEm30nG6kkBmF9bfig",
+    "channelId": "UCL5WDPEm30nG6kkBmF9bfig"
+  },
+  {
+    "title": "Caisses de grève",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCp946AR8kqEF3sW9LB0KW-w",
+    "channelId": "UCp946AR8kqEF3sW9LB0KW-w"
+  },
+  {
+    "title": "À L'Assaut du Ciel",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvW-hY30MCw1qrxAN2HeeZg",
+    "channelId": "UCvW-hY30MCw1qrxAN2HeeZg"
+  },
+  {
+    "title": "Wissam Xelka",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwU7Gq3vG5kL1eknXIZvMag",
+    "channelId": "UCwU7Gq3vG5kL1eknXIZvMag"
+  },
+  {
+    "title": "Au Poste",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8-FN_ftL-crIaXMouuykyQ",
+    "channelId": "UC8-FN_ftL-crIaXMouuykyQ"
+  },
+  {
+    "title": "Le Vent Se Lève",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNsyUg9n7TB365g4n13UOIg",
+    "channelId": "UCNsyUg9n7TB365g4n13UOIg"
+  },
+  {
+    "title": "Les Mutins de Pangée",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC__p75n2hixlmgcJVQmzmkw",
+    "channelId": "UC__p75n2hixlmgcJVQmzmkw"
+  },
+  {
+    "title": "Data Gueule",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCm5wThREh298TkK8hCT9HuA",
+    "channelId": "UCm5wThREh298TkK8hCT9HuA"
+  },
+  {
+    "title": "Réseau Salariat",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwdrNdnPSkE7HEAiuRG8Tcw",
+    "channelId": "UCwdrNdnPSkE7HEAiuRG8Tcw"
+  },
+  {
+    "title": "Désinfox-Migrations",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbe8Tm9UkKureJne_l6fg8A",
+    "channelId": "UCbe8Tm9UkKureJne_l6fg8A"
+  },
+  {
+    "title": "Wikirouge",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcPAXdJA9QLHHLgDsiIIZ8Q",
+    "channelId": "UCcPAXdJA9QLHHLgDsiIIZ8Q"
+  },
+  {
+    "title": "Revue Ballast",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWKASfAZMU6OrodrDvKJi4A",
+    "channelId": "UCWKASfAZMU6OrodrDvKJi4A"
+  },
+  {
+    "title": "Rosa-Luxemburg-Stiftung",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClp4017ICvSPjIEBZLeEwaQ",
+    "channelId": "UClp4017ICvSPjIEBZLeEwaQ"
+  },
+  {
+    "title": "L'étincelle média",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQSqDmpNVYYtCWlkcqar_IQ",
+    "channelId": "UCQSqDmpNVYYtCWlkcqar_IQ"
+  },
+  {
+    "title": "Potentia Multitudinis",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCf_l-z2U9SEo04BF0v035kw",
+    "channelId": "UCf_l-z2U9SEo04BF0v035kw"
+  },
+  {
+    "title": "Metabolism of Cities",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwaliuWsJWhdhk-KUfQHlYA",
+    "channelId": "UCwaliuWsJWhdhk-KUfQHlYA"
+  },
+  {
+    "title": "Investig'Action",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChq7IIJgKBr5cElD44Q6PlA",
+    "channelId": "UChq7IIJgKBr5cElD44Q6PlA"
+  },
+  {
+    "title": "Le journal des briques",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSbaZ4p6yrWGT8UYBJFSzMQ",
+    "channelId": "UCSbaZ4p6yrWGT8UYBJFSzMQ"
+  },
+  {
+    "title": "Antastesialit",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwBMjlAhbZRReklVXC3ZYEQ",
+    "channelId": "UCwBMjlAhbZRReklVXC3ZYEQ"
+  },
+  {
+    "title": "Docteur Alwest",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAgUV11t0UuSn0BOF0BlZ3w",
+    "channelId": "UCAgUV11t0UuSn0BOF0BlZ3w"
+  },
+  {
+    "title": "Gregoire Simpson",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCRhYUx9NzhSd5xM38yshGQA",
+    "channelId": "UCRhYUx9NzhSd5xM38yshGQA"
+  },
+  {
+    "title": "LIB TROPIQUES",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-OKvAo7bzZTAkqbPS9eLiQ",
+    "channelId": "UC-OKvAo7bzZTAkqbPS9eLiQ"
+  },
+  {
+    "title": "iReMMO",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIO0R7N49K14bBvWIEXPYFg",
+    "channelId": "UCIO0R7N49K14bBvWIEXPYFg"
+  },
+  {
+    "title": "Tonton Manu",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTzTmLRVJ3dw-tLhwVOOPqQ",
+    "channelId": "UCTzTmLRVJ3dw-tLhwVOOPqQ"
+  },
+  {
+    "title": "Centre d'Histoire Sociale - Jeanne Menjoulet",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFKMJTQ97s6gIC5u9j06l4Q",
+    "channelId": "UCFKMJTQ97s6gIC5u9j06l4Q"
+  },
+  {
+    "title": "Antastesiaa",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIBAJIVwRXYViiRXREgM44w",
+    "channelId": "UCIBAJIVwRXYViiRXREgM44w"
+  },
+  {
+    "title": "Le monde en cartes",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYA_ElxMgkJlvcKa4SM0dOg",
+    "channelId": "UCYA_ElxMgkJlvcKa4SM0dOg"
+  },
+  {
+    "title": "Economistes Atterrés",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrL-mCKoPPh9NgR2rAM3kPw",
+    "channelId": "UCrL-mCKoPPh9NgR2rAM3kPw"
+  },
+  {
+    "title": "Pour une Sécurité sociale de l'alimentation",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCX7LlainzaDuOxSrPYVkznA",
+    "channelId": "UCX7LlainzaDuOxSrPYVkznA"
+  },
+  {
+    "title": "RebellesDuGenre",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_U7Fn_6yVpcAH0sJtSoeWg",
+    "channelId": "UC_U7Fn_6yVpcAH0sJtSoeWg"
+  },
+  {
+    "title": "Antastesialit",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwBMjlAhbZRReklVXC3ZYEQ",
+    "channelId": "UCwBMjlAhbZRReklVXC3ZYEQ"
+  },
+  {
+    "title": "Cerveaux Non Disponibles",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyZvhM3scPMcemgiNSv4UtA",
+    "channelId": "UCyZvhM3scPMcemgiNSv4UtA"
+  },
+  {
+    "title": "Swann Périssé",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCio3UvRm2M_WaRPzHafNmGw",
+    "channelId": "UCio3UvRm2M_WaRPzHafNmGw"
+  },
+  {
+    "title": "Gaspard G",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCI-8QMy9n3I5Pv6mTmXoAXA",
+    "channelId": "UCI-8QMy9n3I5Pv6mTmXoAXA"
+  },
+  {
+    "title": "Victor B.",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKpRJZK14ZH7ffHtXMwPcTg",
+    "channelId": "UCKpRJZK14ZH7ffHtXMwPcTg"
+  },
+  {
+    "title": "URBANIA FR",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZvvTha3dsKTZy7L3H09Tqg",
+    "channelId": "UCZvvTha3dsKTZy7L3H09Tqg"
+  },
+  {
+    "title": "Loutrepoutre",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjEBcIbtxlhwh5_WExXfWkQ",
+    "channelId": "UCjEBcIbtxlhwh5_WExXfWkQ"
   }
 ]
